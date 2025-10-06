@@ -1,21 +1,15 @@
 import express from 'express';
+import { getAllTasks, createTask, updateTask, deleteTask } from '../controller/taskController.js';
+
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.status(200).send('Bạn có 1 task mới');
-});
+router.get('/', getAllTasks);
 
-router.post('/', (req, res) => {
-    res.status(201).json({ message: 'Task đã được tạo' });
-});
+router.post('/', createTask);
 
-router.put('/:id', (req, res) => {
-    res.status(201).json({ message: 'Task đã được tạo thành công' });
-});
+router.put('/:id', updateTask);
 
-router.delete('/:id', (req, res) => {
-    res.status(201).json({ message: 'Task đã được xóa thành công' });
-});
+router.delete('/:id', deleteTask);
 
 export default router;

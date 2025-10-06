@@ -1,0 +1,14 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Builds / caches
+dist/
+build/
+.cache/
+coverage/
+
+# Env / secrets
+.env
+.env.*

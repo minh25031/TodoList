@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import AddTask from '@/components/AddTask';
 import TaskList from '@/components/TaskList';
-import StatsAndFillters from '@/components/StatsAndFillters';
+import StatsAndFilters from '@/components/StatsAndFilters';
 import TaskListAndPagination from '@/components/TaskListAndPagination';
 import DateTimeFilter from '@/components/DateTimeFilter';
 import Footer from '@/components/Footer';
@@ -31,7 +31,7 @@ const HomePage = () => {
                     <AddTask />
 
                     {/* Thống kê và bộ lọc */}
-                    <StatsAndFillters />
+                    <StatsAndFilters />
 
                     {/* Danh sách nhiệm vụ */}
                     <TaskList />
